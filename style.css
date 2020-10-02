@@ -1,0 +1,135 @@
+body {
+  background-color: grey;
+  font-family: "Veranda", Arial, Helvetica, sans-serif;
+  color: black;
+  max-width: 1200px
+}
+
+.main{
+  padding: 0px 50px 30px 50px;
+  border: 25px solid white;
+  margin: auto;
+  margin-left: 140px;
+  /*padding: 0px 10px;*/
+}
+
+.sideNav{
+  position: fixed;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+  width: 140px;
+  height: 100%;
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding-left: 10px;
+  background-color: white;
+  font-size: 1.25rem;
+  color: black;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+
+h1 {
+  font-family: Impact;
+  font-size: 3.5rem;
+  color: black;
+  text-shadow: -1px 1px 0 white;
+}
+
+#table1 {
+  border-collapse: separate;
+  color: yellow;
+}
+
+#table2 {
+  border-collapse: collapse;
+  color: yellow;
+  text-shadow: -1px 1px 0 #000;
+}
+
+a:link {
+  color: darkgreen;
+}
+
+a:hover, a:focus {
+  color: lightgreen;
+}
+
+a:visited {
+  color: rgb(97, 49, 17);
+}
+
+.sideNav a{
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+  display: block;
+}
+
+.floatLeft{
+  float: left;
+  width: 400px
+}
+
+.clearLeft{
+  position: relative;
+  clear: left;
+  top: 10px
+}
+
+.rel{
+  position: relative;
+  left: 10px;
+}
+
+#aboutStyle {
+  border: 25px solid royalblue;
+}
+
+#resumeStyle {
+  border: 25px solid black;
+}
+
+#projectsStyle {
+  border: 25px solid rgb(81, 0, 128);
+}
+
+#funStyle {
+  border: 25px solid yellow;
+}
+
+#royalBlue{
+  background-color: royalblue;
+}
+
+#tommiePurple{
+  background-color: rgb(81, 0, 128);
+}
+
+#black{
+  background-color: black;
+}
+
+#yellow{
+  background-color: yellow;
+}
+
+@media screen and (max-height: 450px){
+  .sideNav {padding-top: 5px;}
+  .sideNav a {font-size: 1rem;}
+}
+
+@media screen and (max-width: 900px){
+  .main{padding: 0px 10px 10px 10px;}
+  .sideNav {width: 100px;}
+  .sideNav a {font-size: 1rem;}
+  .main{margin-left: 100px;}
+}
