@@ -2,7 +2,7 @@ body {
   background-color: grey;
   font-family: "Veranda", Arial, Helvetica, sans-serif;
   color: black;
-  max-width: 1200px
+  max-width: 1000px
 }
 
 .main{
@@ -10,7 +10,8 @@ body {
   border: 25px solid white;
   margin: auto;
   margin-left: 140px;
-  /*padding: 0px 10px;*/
+  line-height: 2;
+  /*padding: 0px 0px;*/
 }
 
 .sideNav{
@@ -18,7 +19,7 @@ body {
   z-index: 1;
   left: 0px;
   top: 0px;
-  width: 140px;
+  width: 155px;
   height: 100%;
   overflow-x: hidden;
   padding-top: 20px;
@@ -76,18 +77,21 @@ a:visited {
 
 .floatLeft{
   float: left;
-  width: 400px
 }
 
-.clearLeft{
+.floatRight{
+  float: right;
+}
+
+.clear{
   position: relative;
-  clear: left;
-  top: 10px
+  clear: both;
+  top: 10px;
 }
 
 .rel{
   position: relative;
-  left: 10px;
+  /*left: 10px;*/
 }
 
 #aboutStyle {
@@ -122,14 +126,44 @@ a:visited {
   background-color: yellow;
 }
 
+#photo{
+  max-width: 400px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#footer{
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+}
+
 @media screen and (max-height: 450px){
-  .sideNav {padding-top: 5px;}
+  .sideNav {
+    padding-top: 5px;
+    width: 115px;
+  }
   .sideNav a {font-size: 1rem;}
+  .main{margin-left: 100px;}
+  h1{font-size: 2rem;}
+  #photo {max-width: 200px;}
+  #footer {
+    margin-left: 8px;
+    font-size: 0.8rem;
+    height: 40px;
+  }
 }
 
 @media screen and (max-width: 900px){
   .main{padding: 0px 10px 10px 10px;}
-  .sideNav {width: 100px;}
+  .sideNav {width: 115px;}
   .sideNav a {font-size: 1rem;}
   .main{margin-left: 100px;}
+  h1{font-size: 2rem;}
+  #photo{max-width: 200px;}
+  #footer {
+    margin-left: 8px;
+    font-size: 0.8rem;
+    height: 40px;
+  }
 }
