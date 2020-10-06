@@ -68,11 +68,21 @@ a:visited {
 .sideNav a{
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.5rem;
   color: black;
   font-weight: bold;
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
   display: block;
+}
+
+.secret {
+  color: greenyellow; 
+  text-shadow: none; 
+  text-decoration: line-through;
+}
+
+.secret a:hover{
+  color: green;
 }
 
 .floatLeft{
@@ -91,7 +101,6 @@ a:visited {
 
 .rel{
   position: relative;
-  /*left: 10px;*/
 }
 
 #aboutStyle {
@@ -107,7 +116,8 @@ a:visited {
 }
 
 #funStyle {
-  border: 25px solid yellow;
+  border: 25px solid greenyellow;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 #royalBlue{
@@ -123,7 +133,7 @@ a:visited {
 }
 
 #yellow{
-  background-color: yellow;
+  background-color: greenyellow;
 }
 
 #photo{

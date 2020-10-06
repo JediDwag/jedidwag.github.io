@@ -21,23 +21,37 @@
         <p><h2>Notable University Projects</h2></p>
         <p><h3>BPlus Tree Implementation</h3></p>
         <p>
-            <img class="floatLeft" id="photo" src="projects/Bplustree.png" alt="Nathan Hickey" width="400" height="auto">
+            <img class="floatLeft" id="photo" src="projects/BplustreeSmall.png" alt="BPlus Tree Diagram" width="400" height="auto">
         </p>
         <div class="rel">
             <p>
-              This is a placeholder blurb. I'm going to put a bunch of words here talking about me and stuff to fill out the page and make it look good. Right now this is just to test the functionality of the website.
+              For our final project in Database Design, Prof. Sawin asked us to create an implementation of a BPlus tree from scratch. When he told us this, we didn't even know what a BPlus tree was. He gave us no guidance how how it should be implemented, and the only requirements were that it needed to support node sizes from three to one hundred, it needed to be able to read in a file that specified the node size as well as various operations such as add, search, and print, and it needed to give the correct output. This assignment was deceptively difficult. I made 3 failed attempts to write a working version before I finally sat down the night before it was due and in one ten hour sitting I wrote a version that works perfectly. Debugging this program probably took me six of those hours. Regardless, I'm very proud of the work I did. I'm sure there are much better and cleaner implementations out there, but this one is mine. You can view the files from the project by clicking the links below.
             </p>
+            <a href="projects/bPlusTree/BPlusTree.java" target="_blank">The main class file.</a><br>
+            <a href="projects/bPlusTree/BPlusTreeMain.java" target="_blank">My driver file. Makes and prints a giant random tree as well as read two command files.</a><br>
+            <a href="projects/bPlusTree/commands.txt" target="_blank">Text file with example commands.</a><br>
+            <a href="projects/bPlusTree/morecommands.txt" target="_blank">Command file I made that shows off how robust the parsing is.</a>
         </div>
-        <h3 class="clearLeft">Stack Based Processor Design</h3>
+        <h3 class="clear">Stack Based Processor Design</h3>
         <p>
-          This is a paragraph about my design document I made.</br>
+        <a href="projects/stackProcessor.png">
+          <img class="floatRight" id="photo" src="projects/stackProcessorSmall.png" alt="Stack Processor Schematic" width="400" height="auto">
+        </a>
+        </p>
+        <p>
+          For our COVID take home midterm last semester in CISC 340 we were asked to design a stack based 16 bit processor. We were given the instruction set, the I-RAM, D-RAM, and Stack Unit modules, some information about the format of the instructions, how memory was addressed, some explanation about what the operations do, and information about how the new modules we were given worked. I spent a great deal of time putting an incredible amount of polish on this exam and earning my 100% grade. I created multiple draw.io objects from scratch, painstakingly created a custom image highlighting the data path of every instruction, and coded the entire thing up in LaTeX to give it a professional level of polish. I'm very proud of the work I did and I wanted to share the design document I created.</br>
           <a href="projects/CISC_340_Midterm_1_NPH.pdf" target="_blank">Document can be viewed here.</a>
         </p>
       </br>
-        <h3>Security Project</h3>
+        <h3>Browser History Sniffing Cyber Security Project</h3>
         <p>
-          This is a paragraph about my history sniffing website I made.</br>
+          <img class="floatLeft" id="photo" src="projects/historySniffSmall.png" alt="History Sniffing Website Preview" width="400" height="auto">
+      </p>
+      <div class="rel">
+        <p>
+          For one of my last projects in Information Security 1, we were asked to make a rudimentary history sniffing website that used disguised links to collect information about the person using the website. For my project I made a fake St. Thomas admissions page with a fake captcha that can detect which department websites the user hadn't visited, and recommend them to the user before letting them proceed to the admissions page. In the process of adding this to my website, I realized that Github doesn't allow php to be used on pages and would give me a 405 error. Because of this, I decided to flatten the landing page, and change the request type on the submit to 'GET' just to give you an idea of how it would work. You can still click the links and go back to the captcha and see how it changes in response to what links you've visited, but you cannot see how the original landing page would modify itself based on that information. The original php code is included in the page source as comments if you would like to see the original code.</br>
           <a href="projects/securityFiles/historyclient.html" target="_blank">Page can be viewed here.</a>
         </p>
+      </div>
     </body>
 </html>
